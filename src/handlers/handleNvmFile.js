@@ -1,3 +1,4 @@
+// @ts-check
 const { chooseNodeVersionIfInstalled } = require("./chooseNodeVersionIfInstalled");
 const { getMinimumAndMaximumVersion } = require("../utils/getMinimumAndMaximumVersion");
 const { installNodeVersion } = require("./installNodeVersion");
@@ -10,7 +11,7 @@ const { getNodeVersionsFromFile } = require("../utils/getNodeVersionsFromFile");
  */
 
 function handleNvmFile(nvmFile) {
-  const parsedNvmFile = getNodeVersionsFromFile(nvmFile.trim());
+  const parsedNvmFile = getNodeVersionsFromFile(nvmFile);
   
   const { minimumVersion, maximumVersion } = getMinimumAndMaximumVersion(parsedNvmFile);
   

@@ -1,3 +1,5 @@
+// @ts-check
+
 /**
  * Extracts the major, minor and patch version from a string: [major, minor, patch]
  * @param {string} version - The version to be parsed

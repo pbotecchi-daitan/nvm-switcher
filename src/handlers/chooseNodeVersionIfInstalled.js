@@ -1,3 +1,4 @@
+// @ts-check
 const { exec } = require("child_process");
 const { filterValidVersions } = require("../utils/filterValidVersions");
 const { parseVersions } = require("../utils/parseVersions");

@@ -1,3 +1,5 @@
+// @ts-check
+
 /**
  * Checks if a version is valid, being above a specific target
  * @param {object} versions - The current version and the target version
