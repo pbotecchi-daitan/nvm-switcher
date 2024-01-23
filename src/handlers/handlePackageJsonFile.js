@@ -1,3 +1,4 @@
+// @ts-check
 const { chooseNodeVersionIfInstalled } = require("./chooseNodeVersionIfInstalled");
 const { useMaximumVersion } = require("../utils/useMaximumVersion");
 const { getMinimumAndMaximumVersion } = require("../utils/getMinimumAndMaximumVersion");

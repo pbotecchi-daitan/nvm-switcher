@@ -1,3 +1,5 @@
+// @ts-check
+
 /**
  * Parses the versions from the nvm list command stdout and turns them into an array of x.y.z strings
  * @param {string} versions - The versions to be parsed

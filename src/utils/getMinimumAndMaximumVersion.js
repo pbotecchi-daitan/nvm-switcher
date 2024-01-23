@@ -1,3 +1,4 @@
+// @ts-check
 const { getSemanticVersion } = require("./getSemanticVersion");
 
 /**
@@ -7,11 +8,11 @@ const { getSemanticVersion } = require("./getSemanticVersion");
 
 function getMinimumAndMaximumVersion(nodeVersions) {
   const minimumVersion = getSemanticVersion(
-    packageJsonNodeVersions.find((version) => version.startsWith(">"))
+    nodeVersions.find((version) => version && version.startsWith(">")) || ""
   );
 
   const maximumVersion = getSemanticVersion(
-    packageJsonNodeVersions.find((version) => version.startsWith("<"))
+    nodeVersions.find((version) => version && version.startsWith("<")) || ""
   );
 
   return {

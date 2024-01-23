@@ -1,3 +1,5 @@
+// @ts-check
+
 /**
  * Uses a specific Node.js version and finishes the process
  * @param {string} version - The version to be used

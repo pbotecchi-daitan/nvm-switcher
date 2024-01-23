@@ -1,6 +1,8 @@
 const { getSemanticVersion } = require("./getSemanticVersion");
 const { isVersionAboveTarget } = require("./isVersionAboveTarget");
 
+// @ts-check
+
 /**
  * Filters the versions that match the comparison criteria
  * @param {string[]} versions - The versions to be filtered
