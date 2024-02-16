@@ -16,6 +16,13 @@ Automatically switch node versions through nvm based on package.json recommended
 
 After all those steps, once you open a shell, it will automatically execute the `nvm-switcher` command and find the optimal version for you.
 
+- To trigger the process automatically after every cd command you should replace `nvm use $(node <directory>/nvm-switcher)` with:
+  ```
+    cd() {
+      builtin cd "$@"
+      nvm use $(node ~/Encourage/nvm-switcher)
+    }
+  ```
 ### Want to contribute?
 
 - Fork the repo [here](https://github.com/Nick-Gabe/nvm-switcher/fork)
